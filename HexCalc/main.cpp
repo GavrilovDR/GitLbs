@@ -2,6 +2,7 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+#include <Windows.h>
 #include "mtrxops.h"
 using namespace std;
 
@@ -12,6 +13,7 @@ void showHelp()
 		<< "--input <file.txt> input file contain matrix\n"
 		<< "--part <part> Part of maxrix (upper_left or upper_right)\n"
 		<< "--operation <operation> Operation (sum, min, max)\n";
+		<< "ВНЕСЕНО ИЗМЕНЕНИЕ В КОД СОГЛАСНО УСЛОВИЮ ЗАДАЧИ";
 }
 
 int main(int argc, char* argv[])
