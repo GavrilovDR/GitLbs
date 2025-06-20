@@ -32,7 +32,11 @@
 	Студенческая почта: 2022100063@togudv.ru
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.com/github/GavrilovDR/GitLbs.svg?branch=master)](https://travis-ci.com/GavrilovDR/GitLbs)
 =======
  [![Build Status](https://travis-ci.com/github/GavrilovDR/GitLbs.svg?branch=master)](https://travis-ci.com/GavrilovDR/GitLbs)
 >>>>>>> a5396185576b26645df86cb6d5b51c37e1543284
+=======
+ [![Build Status](https://travis-ci.com/github/GavrilovDR/GitLbs.svg?branch=master)](https://travis-ci.com/GavrilovDR/GitLbs)
+>>>>>>> refs/remotes/origin/master
