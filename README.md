@@ -31,4 +31,8 @@
 	Данное приложение и руководство к нему разработал студент группы ПО(б)-31 Гаврилов Денис
 	Студенческая почта: 2022100063@togudv.ru
 
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.com/github/GavrilovDR/GitLbs.svg?branch=master)](https://travis-ci.com/GavrilovDR/GitLbs)
+=======
+ [![Build Status](https://travis-ci.com/github/GavrilovDR/GitLbs.svg?branch=master)](https://travis-ci.com/GavrilovDR/GitLbs)
+>>>>>>> a5396185576b26645df86cb6d5b51c37e1543284
