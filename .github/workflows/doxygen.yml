@@ -1,22 +1,22 @@
-name: Doxygen Documentation
-on: [push, pull_request]
-
+name: Doxygen CI
+on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Install Doxygen & Graphviz
-      run: sudo apt-get install -y doxygen graphviz
-
-    - name: Generate Doxygen
-      run: doxygen Doxyfile
-
+    - name: Install MSYS2
+      uses: msys2/setup-msys2@v2
+      with:
+        update: true
+        install: mingw-w64-x86_64-doxygen mingw-w64-x86_64-graphviz
+        
+    - name: Generate Docs
+      shell: msys2 {0}
+      run: |
+        doxygen Doxyfile
+        
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/html
-        keep_files: true
